@@ -15,11 +15,10 @@ export default defineManifest({
 		128: "img/logo-128.png",
 	},
 	action: {
-		default_popup: "popup.html",
+		default_popup: "src/popup/popup.html",
 		default_icon: "img/logo-48.png",
 	},
-	options_page: "options.html",
-	devtools_page: "devtools.html",
+	options_page: "src/options/options.html",
 	background: {
 		service_worker: "src/background/index.ts",
 		type: "module",
@@ -31,7 +30,7 @@ export default defineManifest({
 		},
 	],
 	side_panel: {
-		default_path: "sidepanel.html",
+		default_path: "src/sidepanel/sidepanel.html",
 	},
 	web_accessible_resources: [
 		{
