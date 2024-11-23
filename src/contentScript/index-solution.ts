@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { summarizeText } from "../ai/langchain-solution";
+import { summarizeText } from "../ai/langchain";
 
 const $ = cheerio.load(document.body.innerHTML);
 console.info("contentScript is running");
