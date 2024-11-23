@@ -1,11 +1,12 @@
-# devfest2024-gemini-workshop
+# Devfest 2024 Gemini and Langchain Chrome Extension
 
-> a chrome extension tools built with Vite + Vanilla, and Manifest v3
+> a chrome extension tools built with Vite + [VanJS](https://vanjs.org/), and Manifest
 
 ## Installing
 
-1. Check if your `Node.js` version is >= **14**.
-2. Change or configurate the name of your extension on `src/manifest`.
+1. Check if your `Node.js` version is >= **20**.
+   1. Optional: Install [bun](https://bun.sh/)
+2. Change or configuration the name of your extension on [`src/manifest`](./src/manifest.ts).
 3. Run `npm install` to install the dependencies.
 
 ## Developing
@@ -13,9 +14,9 @@
 run the command
 
 ```shell
-$ cd devfest2024-gemini-workshop
+cd devfest2024-gemini-workshop
 
-$ npm run dev
+npm run dev
 ```
 
 ### Chrome Extension Developer Mode
@@ -34,7 +35,7 @@ $ npm run dev
 After the development of your extension run the command
 
 ```shell
-$ npm run build
+npm run build
 ```
 
 Now, the content of `build` folder will be the extension ready to be submitted to the Chrome Web Store. Just take a look at the [official guide](https://developer.chrome.com/webstore/publish) to more infos about publishing.
